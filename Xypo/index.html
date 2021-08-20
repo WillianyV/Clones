@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <title>Xypo</title>
 </head>
 <body>
@@ -33,12 +34,12 @@
     <!-- menu -->
     <nav id="sideNav">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre nós</a></li>
-            <li><a href="#">Funcionalidades</a></li>
-            <li><a href="#">Cursos</a></li>
-            <li><a href="#">Ofertas</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">Sobre nós</a></li>
+            <li><a href="#features">Funcionalidades</a></li>
+            <li><a href="#courses">Cursos</a></li>
+            <li><a href="#offer">Ofertas</a></li>
+            <li><a href="#contact">Entrar</a></li>
         </ul>
     </nav>
     <img src="assets/images/menu.png" alt="Menu" id="menuBtn"><!-- fim menu -->    
@@ -218,7 +219,15 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section><!-- fim rodape -->
+        <!-- icones -->
+        <div class="social-icons">
+            <img src="assets/images/facebook.png" alt="Facebook">
+            <img src="assets/images/instagram.png" alt="Instagram">
+            <img src="assets/images/twitter.png" alt="Twitter">
+            <img src="assets/images/linkedin.png" alt="Linkedin">
+        </div>
+        <!-- fim icones -->
     
 
     <!-- java script -->
@@ -234,6 +243,8 @@
                 sideNav.style.right = "-250px";
             }
         }
-    </script><!-- fim java script -->
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+    <!-- fim java script -->
 </body>
 </html>
