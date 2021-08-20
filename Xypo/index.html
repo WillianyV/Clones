@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Xypo</title>
+</head>
+<body>
+    <!-- home -->
+    <section id="header">
+        <div class="container">
+            <img src="assets/images/logo.png" alt="Logo" class="logo">
+            <div class="header-text">
+                <h1>Nosso propósito é <br> ensinar, trazendo o melhor conteúdo para as pessoas</h1>
+                <span class="square"></span>
+                <p>
+                    Lorem ipsum adipiscing tincidunt tristique aptent in nulla cras nunc, lacinia 
+                    a morbi quisque sed vel pretium. curae id potenti proin sem erat mauris curabitur 
+                    magna, volutpat lobortis consectetur ornare sagittis suspendisse ultricies semper 
+                    nulla.
+                </p>
+                <button class="common-btn">Leia mais</button>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+        </div>
+    </section><!-- fim sessao home -->    
+    <!-- menu -->
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Funcionalidades</a></li>
+            <li><a href="#">Cursos</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <img src="assets/images/menu.png" alt="Menu" id="menuBtn"><!-- fim menu -->    
+    <!-- sobre nós -->
+    <section id="about">
+        <div class="about-left-col">
+            <img src="assets/images/about.png" alt="Sobre nós">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>Sobre nós</h1>
+                <span class="square"></span>
+                <p>
+                    Imperdiet ut metus nec curabitur justo aliquam neque, aenean 
+                    hendrerit nostra lacinia lorem at nostra, posuere augue libero 
+                    habitasse elit eros. lacinia luctus orci scelerisque maecenas 
+                    commodo vitae fringilla, praesent tellus lacinia primis pharetra 
+                    fermentum, pharetra orci nulla urna odio mauris. curae etiam amet 
+                    proin pretium litora tempor venenatis lacinia sodales ligula, 
+                    luctus magna euismod in urna donec aenean tellus aptent suspendisse, 
+                    tortor nisi ante sodales ullamcorper mattis a tempus morbi.  
+                </p>
+                <br><br>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+                <h2>"O aprendizado é conhecimento, e conhecimento é liberdade e poder."</h2>
+                <h3>--- Altair</h3>
+            </div>
+
+        </div>
+    </section><!-- fim sobre nós -->
+    <!-- Funcionalidades -->
+        <section id="features">
+            <div class="feature-row">
+                <div class="feature-col">
+                    <img src="assets/images/pic-1.png" alt="">
+                    <h4>Aprenda em qualquer lugar</h4>
+                    <p>Pelo o computador, tablet ou smartphone</p>
+                </div>
+                <div class="feature-col">
+                    <img src="assets/images/pic-2.png" alt="">
+                    <h4>Professores qualificados</h4>
+                    <p>Os professoras mais qualificados e experientes da cidade</p>
+                </div>
+                <div class="feature-col">
+                    <img src="assets/images/pic-3.png" alt="">
+                    <h4>Acesso ilimitado</h4>
+                    <p>Escolha qualquer um dos nossos curso</p>
+                </div>
+            </div>
+            <div class="feaure-btn">
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+                <button class="common-btn">Comece Grátis</button>
+            </div>
+        </section>
+    <!-- Fim das Funcionalidades -->
+    
+    
+    <!-- java script -->
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function(){
+            if (sideNav.style.right == "-250px"){
+                sideNav.style.right = "0px";
+            }else{
+                sideNav.style.right = "-250px";
+            }
+        }
+    </script><!-- fim java script -->
+</body>
+</html>
